@@ -219,3 +219,11 @@ The extracted names are available in the following files:
 - `unique_names_v1_autocomplete.txt`: Names unique to the v1 endpoint
 - `unique_names_v2_autocomplete.txt`: Names unique to the v2 endpoint
 - `unique_names_v3_autocomplete.txt`: Names unique to the v3 endpoint
+
+## Main script:
+The main script for the complete implementation is in the `script.py` file.
+Requirements:
+```text
+python>=3.10 (recommended)
+requests==2.32.3
+```
