@@ -77,8 +77,8 @@ Detailed analysis revealed several interesting patterns in the API:
       - Version 3: http://35.200.185.69:8000/v3/autocomplete
     - Each endpoint requires a mandatory query parameter with string value, else it returns a status code of 422 (Unprocessed)
     - Each version returns the same format of data and a status code of 200 on success but with different rate limits
-    - All endpoints return between 0 to 15 results per query
-    Example success response:
+    - All endpoints return between 0 to 15 results per query \\
+    <br>Example success response:
     ```javascript
     {
       "version": "v1",
@@ -97,7 +97,7 @@ Detailed analysis revealed several interesting patterns in the API:
         ]
     }
     ````
-    Example unprocessed response:
+    <br>Example unprocessed response:
    ```javascript
    {
         "detail": [
@@ -221,7 +221,7 @@ The extracted names are available in the following files:
 - `unique_names_v3_autocomplete.txt`: Names unique to the v3 endpoint
 
 ## Main script:
-The main script for the complete implementation is in the `script.py` file.
+The main script for the complete implementation is in the `script.py` file. <br>
 Requirements:
 ```text
 python>=3.10 (recommended)
