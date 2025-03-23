@@ -77,42 +77,42 @@ Detailed analysis revealed several interesting patterns in the API:
       - Version 3: http://35.200.185.69:8000/v3/autocomplete
     - Each endpoint requires a mandatory query parameter with string value, else it returns a status code of 422 (Unprocessed)
     - Each version returns the same format of data and a status code of 200 on success but with different rate limits
-    - All endpoints return between 0 to 15 results per query \\
-    <br>Example success response:
-    ```javascript
-    {
-      "version": "v1",
-      "count": 10,
-      "results": [
-          "aa",
-          "aabdknlvkc",
-          "aabrkcd",
-          "aadgdqrwdy",
-          "aagqg",
-          "aaiha",
-          "aainmxg",
-          "aajfebume",
-          "aajwv",
-          "aakfubvxv"
-        ]
-    }
-    ````
-    <br>Example unprocessed response:
-   ```javascript
-   {
-        "detail": [
-            {
-                "type": "missing",
-                "loc": [
-                    "query",
-                    "query"
-                ],
-                "msg": "Field required",
-                "input": null
-            }
-        ]
-    }
-   ```
+    - All endpoints return between 0 to 15 results per query
+<br>Example success response:<br>
+```javascript
+{
+  "version": "v1",
+  "count": 10,
+  "results": [
+      "aa",
+      "aabdknlvkc",
+      "aabrkcd",
+      "aadgdqrwdy",
+      "aagqg",
+      "aaiha",
+      "aainmxg",
+      "aajfebume",
+      "aajwv",
+      "aakfubvxv"
+    ]
+}
+````
+<br>Example unprocessed response:<br>
+```javascript
+{
+    "detail": [
+        {
+            "type": "missing",
+            "loc": [
+                "query",
+                "query"
+            ],
+            "msg": "Field required",
+            "input": null
+        }
+    ]
+}
+```
 3. **Rate Limits**:
     - v1: 100 requests per minute
     - v2: 50 requests per minute
