@@ -119,12 +119,13 @@ Example unprocessed response:<br>
     - v2: 50 requests per minute
     - v3: 80 requests per minute
     - Rate limits are strictly enforced with 429 status codes when exceeded
-    Example rate limit response:
-    ```javascript
-    {
-      "detail": "100 per 1 minute"
-    }
-    ```
+
+<br>Example rate limit response:<br>
+```javascript
+{
+  "detail": "100 per 1 minute"
+}
+```
 4. **Name Data**:
     - Names always start with the prefix in the query
     - Most names are between 5-12 characters long
