@@ -78,6 +78,7 @@ Detailed analysis revealed several interesting patterns in the API:
     - Each endpoint requires a mandatory query parameter with string value, else it returns a status code of 422 (Unprocessed)
     - Each version returns the same format of data and a status code of 200 on success but with different rate limits
     - All endpoints return between 0 to 15 results per query
+
 <br>Example success response:<br>
 ```javascript
 {
@@ -97,7 +98,7 @@ Detailed analysis revealed several interesting patterns in the API:
     ]
 }
 ````
-<br>Example unprocessed response:<br>
+Example unprocessed response:<br>
 ```javascript
 {
     "detail": [
